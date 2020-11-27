@@ -18,6 +18,8 @@ $(document).ready(function () {
   });
   
   //FUNZIONI PER LO SLIDER
+
+//RICORDA NEXT
   
   function NextImage() {
     var imgActive = $('img.active');
@@ -36,5 +38,4 @@ $(document).ready(function () {
       dotActive.next('i').addClass('active');
     }
   };
-  
   
