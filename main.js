@@ -39,3 +39,20 @@ $(document).ready(function () {
     }
   };
   
+  function PreviewImage() {
+    var imgActive = $('img.active');
+    var imgLast = $('img.last');
+    var dotActive = $('i.fa-circle.active');
+    var dotLast = $('i.fa-circle.last');
+  
+    imgActive.removeClass('active');
+    dotActive.removeClass('active');
+  
+    if (imgActive.hasClass('first')) {
+      imgLast.addClass('active');
+      dotLast.addClass('active');
+    } else {
+      imgActive.prev('img').addClass('active');
+      dotActive.prev('i').addClass('active');
+    }
+  };
